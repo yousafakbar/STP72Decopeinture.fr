@@ -1,0 +1,320 @@
+
+html{
+	font-size: 62.5%;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+section
+{
+
+	position: relative;	
+	width: 100%;
+	height: 70vh;
+	background: url(7.jpeg);
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+section .wave
+{
+	position: absolute;
+	width: 100%;
+	height: 143px;
+	bottom: 0;
+	left: 0;
+	background: url(wave.png);
+	opacity: .9;
+	animation: animate 10s linear infinite;
+}
+section .wave:before
+{
+	content: '';
+	width: 100%;
+	height: 143px;
+	background: url(wave.png);	
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: .7;
+	animation: animate-reverse 10s linear infinite;
+
+
+}
+
+
+
+section .wave:after
+{
+	content: '';
+	width: 100%;
+	height: 143px;
+	background: url(wave.png);	
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity:0.3;
+	animation-delay: -5s;
+	animation: animate 20s linear infinite;
+
+}
+@keyframes animate
+{
+	0%
+	{
+		background-position: 0;
+	}
+	100%
+	{
+		background-position: 136.0rem;
+	}
+}
+
+@keyframes animate-reverse
+{
+	0%
+	{
+		background-position: 136.0rem;
+	}
+	100%
+	{
+		background-position: 0;
+	}
+}
+
+
+@media(max-width: 1200px)
+{
+	html{
+		font-size: 55%;
+
+	}
+}
+
+@media(max-width: 518px)
+{
+	html{
+		font-size: 38%;
+		
+	}
+}
+@media(max-width: 518px)
+{
+	section
+{
+
+	position: relative;	
+	width: 100%;
+	height: 50vh;
+	background: url(7.jpeg);
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+}
+#mainHeading_text 
+{
+	padding-top: 9rem;
+
+}
+
+h1
+{
+	font-size: 7rem;
+	text-align: center;	
+	font-family: 'Montserrat',sans-serif;
+	font-weight: 600;
+}
+
+h2{
+	color: #212121;
+	font-family: 'Montserrat',sans-serif;
+	font-size: 2.5rem; 
+	font-weight: 900;
+
+}
+
+h3{
+	text-align: left;
+	margin-left: 3rem;
+}
+ p{
+	text-align: center;
+	font-size: 3rem;
+}
+.btn{
+	background-color: lightblue;
+	border-radius: 2.5rem;
+	text-align: center;
+	font-size: 1.9rem;
+	padding-left: 3.5%;
+	 padding-right:3.5%;
+	 margin-top: 4%
+	
+}
+
+section .content
+{
+	position: relative;
+	z-index: 1;
+	margin: auto;
+	max-width: 90rem;
+	text-align: center;
+}
+
+
+/* three button */
+
+.btn-group button {
+
+  background-color: white; /* white background */
+  width:90%;
+  border: .5rem solid #8e24aa;
+  border-bottom-style: dashed;
+  border-top-style: dashed;
+  border-radius: 2.9rem;
+  cursor: pointer; /* Pointer/hand icon */
+  margin-left: 2.5rem;
+
+
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.list-text{
+	color: #616161;
+	 font-size: 2rem;
+}
+
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  transform: scale(1.05); 
+  border-top-style: solid;
+  border-bottom-style: solid;
+  box-shadow: .2rem .4rem 12rem rgba(0, 0, 0, 0.46);
+}
+
+.e-block{
+
+	height: 110vh;
+}
+
+
+
+
+
+
+
+
+
+.carousel-nav-icon {
+   height: 4.8rem;
+   width: 4.8rem;
+   padding-right: .9rem;
+   margin-right: 3.3rem; 
+
+
+}
+
+  .carousel-item  .col, .carousel-item .col-sm, .carousel-item .col-md {
+      margin: .8rem;
+      height: 30.0rem;
+      background-size: cover;
+      background-position: center center;
+   }
+
+
+
+
+
+
+
+
+
+.backgrond-1
+{
+	margin:0;
+	padding: 0;
+	width: 100% ;
+	height: 45.0rem;
+	background-color: black;
+	position: relative;
+	background: linear-gradient(90deg, #f0027f, #75489f); 
+}
+.backgrond-1:before
+{
+	content: '';
+	position: : absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 15.0rem;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  height: 15%;
+}
+.text-sm-center
+{
+	font-size: 2.5rem;
+	margin-left: 2.5rem;
+	margin-right: 2.5rem;
+
+}
+
+
+/* Form css */
+#main1 {
+    padding: 0rem 0rem;
+    overflow: hidden;
+}
+
+#shade {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(137, 0, 255, 0.25), rgba(255, 0, 118, 0.25));
+    position: relative;
+}
+
+#img {
+    position: absolute;
+    height: 59rem;
+    width: 55rem;
+}
+
+#main {
+    box-shadow: .2rem .4rem 12rem rgba(0, 0, 0, 0.46);
+}
+
+input {
+    border: .1rem solid white;
+}
+
+#input {
+    border-bottom: .1rem solid #717171;
+    padding: .4rem;
+    padding-top: 0rem;
+    margin-bottom: .2rem;
+    width: 100%;
+}
+.container {
+    margin-top: 2.0rem;
+
+}
+
+.signupcontainer {
+    margin-top: 2.0rem;
+
+   
+}
